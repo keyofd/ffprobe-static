@@ -10,7 +10,7 @@ if (platform !== 'darwin' && platform !=='linux' && platform !== 'win32') {
   process.exit(1);
 }
 
-var arch = os.arch();console.log(arch);
+var arch = os.arch();
 if (platform === 'darwin' && arch !== 'x64' && arch != 'arm64') {
   console.error('Unsupported architecture.');
   process.exit(1);
